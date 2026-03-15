@@ -1,0 +1,84 @@
+<!-- <!DOCTYPE html>
+<html>
+<head>
+<title>Simple Express Site</title>
+</head>
+<body>
+
+<h1>My Express Website</h1>
+<button onclick="getData()">Get API Data</button>
+
+<p id="result"></p>
+
+<script>
+async function getData(){
+  const res = await fetch('/api')
+  const data = await res.json()
+  document.getElementById("result").innerText = data.message
+}
+</script>
+
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Express Tailwind Page</title>
+
+<script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+
+<body class="bg-gray-100">
+
+<!-- Navbar -->
+<nav class="bg-blue-600 text-white p-4 flex justify-between">
+<h1 class="text-xl font-bold">MySite</h1>
+<ul class="flex gap-6">
+<li><a href="#">Home</a></li>
+<li><a href="#">About</a></li>
+<li><a href="#">Contact</a></li>
+</ul>
+</nav>
+
+<!-- Hero Section -->
+<section class="flex flex-col items-center justify-center text-center p-10">
+<h2 class="text-4xl font-bold mb-4">Express + Tailwind</h2>
+<p class="text-gray-600 mb-6">Responsive single page design</p>
+
+<button class="bg-blue-600 text-white px-6 py-2 rounded hover:bg-blue-700">
+Get Started
+</button>
+</section>
+
+<!-- Cards -->
+<section class="grid md:grid-cols-3 gap-6 p-10">
+
+<div class="bg-white shadow p-6 rounded">
+<h3 class="text-xl font-semibold">Fast</h3>
+<p class="text-gray-500 mt-2">Powered by Express server</p>
+</div>
+
+<div class="bg-white shadow p-6 rounded">
+<h3 class="text-xl font-semibold">Responsive</h3>
+<p class="text-gray-500 mt-2">Built with Tailwind CSS</p>
+</div>
+
+<div class="bg-white shadow p-6 rounded">
+<h3 class="text-xl font-semibold">Simple</h3>
+<p class="text-gray-500 mt-2">Single page layout</p>
+</div>
+
+</section>
+
+<!-- Footer -->
+<footer class="bg-gray-800 text-white text-center p-4">
+© 2026 MySite
+</footer>
+
+</body>
+</html>
